@@ -82,13 +82,27 @@
 
 ---
 
-## 🌱 Screenshots
+## 📸 App Screenshots
 
-<p align="center">
-  <img src="assets/images/bg.jpg" width="200" />
-  <img src="assets/images/bg2.jpg" width="200" />
-  <img src="assets/images/bg4.jpg" width="200" />
-</p>
+<table>
+  <tr>
+    <td><img src="assets/images/splash.png" alt="Splash" width="100%"/></td>
+    <td><img src="assets/images/onboarding.png" alt="Onboarding" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/home.png" alt="Home" width="100%"/></td>
+    <td><img src="assets/images/home2.png" alt="Home2" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/grow.png" alt="Grow" width="100%"/></td>
+    <td><img src="assets/images/yourforest.png" alt="Your Forest" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/progress.png" alt="Progress" width="100%"/></td>
+    <td><img src="assets/images/settings.png" alt="Settings" width="100%"/></td>
+  </tr>
+</table>
+
 
 ---
 
