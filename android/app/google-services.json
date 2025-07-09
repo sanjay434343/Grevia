@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885681443452",
+    "project_id": "grevia-7b7af",
+    "storage_bucket": "grevia-7b7af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885681443452:android:46163df122cb27c428eff9",
+        "android_client_info": {
+          "package_name": "com.app.grevia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiosIrqYHSh_LwYAVAiPx8ptgpFMG09MA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

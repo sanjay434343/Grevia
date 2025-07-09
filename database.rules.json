@@ -1,0 +1,102 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "profile": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "focusStats": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "status": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "preferences": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "focusSessions": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["timestamp"],
+          "$sessionId": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        },
+        "daily_sessions": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["date"],
+          "$date": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid",
+            "$sessionId": {
+              ".read": "$uid === auth.uid",
+              ".write": "$uid === auth.uid"
+            }
+          }
+        },
+        "daily_summaries": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["date"],
+          "$date": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        },
+        "currentTreeGrowth": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid"
+        },
+        "level_history": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["timestamp"],
+          "$historyId": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        },
+        "tree_completions": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["timestamp"],
+          "$completionId": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        },
+        "achievements": {
+          ".read": "$uid === auth.uid",
+          ".write": "$uid === auth.uid",
+          ".indexOn": ["timestamp"],
+          "$achievementId": {
+            ".read": "$uid === auth.uid",
+            ".write": "$uid === auth.uid"
+          }
+        }
+      }
+    },
+    "globalStats": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "leaderboard": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    "trees": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    ".read": false,
+    ".write": false
+  }
+}
